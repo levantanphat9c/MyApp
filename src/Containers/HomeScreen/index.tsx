@@ -4,6 +4,7 @@ import {Text, TouchableOpacity, View} from 'react-native';
 import styles from './styles';
 import {ROUTE_NAME} from '@/Navigation/RouteName';
 import {HomeStackScreenProps} from '@/Navigation/NavigationType';
+import Config from 'react-native-config';
 
 const HomeScreen = ({
   navigation,
@@ -17,6 +18,7 @@ const HomeScreen = ({
           });
         }}>
         <Text>Go to Setting Screen</Text>
+        <Text>{Config.API_URL}</Text>
       </TouchableOpacity>
     </View>
   );

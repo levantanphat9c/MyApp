@@ -8,6 +8,7 @@ import {TabStackParamList} from '../NavigationType';
 const Tab = createBottomTabNavigator<TabStackParamList>();
 
 const TabStack = () => {
+  console.log('TabStack');
   return (
     <Tab.Navigator screenOptions={{headerShown: false}}>
       <Tab.Screen name={ROUTE_NAME.HOME_STACK} component={HomeStack} />
